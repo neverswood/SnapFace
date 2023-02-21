@@ -7,6 +7,7 @@ import { CoreModule } from './core/core.module';
 import { CommonModule } from '@angular/common';
 import { LandingPageModule } from './landing-page/landing-page.module';
 import { AuthModule } from './auth/auth.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +20,7 @@ import { AuthModule } from './auth/auth.module';
     CoreModule,
     LandingPageModule,
     AuthModule,
+    FontAwesomeModule,
   ],
 })
 export class AppModule {

@@ -1,6 +1,30 @@
-<div class="landing-block">
-    <img src="assets/snapface.png" alt="Snapface logo">
-    <div class="landing-links">
-        <button (click)="onContinue()">Continuer vers Snapface</button>
+<div>
+    <h1>Home</h1>
+    <div class="landing-block">
+        <div class="landing-block__articles">
+            <div class="landing-block__article">
+                <p>Créez et partagez vos snaps avec votre communauté. Ajoutez y un titre, une photo, une description, la
+                    localité et
+                    c'est parti !</p>
+            </div>
+        </div>
+        <div class="face-snap-card">
+            <div class="face-snap-card__title">
+                <h2>Title</h2>
+            </div>
+            <div class="face-snap-card__content">
+                <p class="date">Mise en ligne le 05/02/2023 à <span class="location">Paris</span></p>
+                <img src="assets/fruit.jpg" alt="fruit">
+                <p class="description">Un bon petit déjeuner avec de bons fruits</p>
+                <p class="snap">
+                    <button>On snap !</button>
+                    <span>82 <i class="fas fa-heart"></i></span>
+                </p>
+            </div>
+        </div>
+        <div class="landing-links">
+            <button>Créez votre compte</button>
+            <button (click)="onContinue()">Continuer vers Snapface</button>
+        </div>
     </div>
 </div>

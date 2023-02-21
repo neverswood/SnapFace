@@ -1,13 +1,39 @@
 header {
+  display: flex;
   text-align: center;
-  background-color: #eee;
-  margin-bottom: 20px;
-  padding: 10px;
+  // background-color: #c992ff;
+  background-color: #673b60;
+  //margin-bottom: 20px;
+  // padding: 10px 10px 10px 580px;
+  height: 117px;
+  width: 100%;
+  font-family: "Shantell Sans", cursive;
+
+  h1 {
+    color: white;
+    text-shadow: 1px 1px 1px white;
+    font-size: 60px;
+    margin: 20px;
+    //width: 357px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    //margin: 0 180px;
+    position: absolute;
+    right: 0;
+    height: 130px;
+    margin-right: 50px;
+  }
 }
 
 a {
   margin: 0 10px;
-  color: #333;
+  color: black;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
@@ -15,6 +41,6 @@ a {
 }
 
 .active {
-  color: #666;
+  color: rgb(46, 46, 46);
   text-decoration: underline;
 }
