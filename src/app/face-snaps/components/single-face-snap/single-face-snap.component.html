@@ -1,12 +1,16 @@
 <div class="face-snap-card" *ngIf="faceSnap$ | async as faceSnap" [ngClass]="{snapped: buttonText === 'Oops, unSnap!'}">
-    <h2>{{faceSnap.title | titlecase}}</h2>
     <a routerLink="/facesnaps">Back</a>
-    <p>Mise en ligne le {{faceSnap.createdDate | date: 'd MMM yyy, à HH:mm'}}</p>
-    <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-    <p>{{ faceSnap.description }}</p>
-    <p *ngIf="faceSnap.location === 'Paris'">Photo prise à {{faceSnap.location}}</p>
-    <p>
-        <button (click)="onSnap(faceSnap.id)">{{buttonText}}</button>
-        <span [ngStyle]="{ color: 'rgb(0,'+ faceSnap.snaps +', 0)'}">{{faceSnap.snaps}}</span>
-    </p>
+    <div class="face-snap-card__content">
+        <div class="face-snap-card__title">
+            <h2>{{faceSnap.title | titlecase}}</h2>
+        </div>
+        <p class="face-snap-card__date-location">Mise en ligne le {{faceSnap.createdDate | date: 'd MMM yyy, à HH:mm'}}
+            à {{faceSnap.location}}</p>
+        <img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
+        <p class="face-snap-card__description">{{ faceSnap.description }}</p>
+        <p class="face-snap-card__snap">
+            <button (click)="onSnap(faceSnap.id)">{{buttonText}}</button>
+            <span>{{faceSnap.snaps}} <i class="fas fa-heart"></i></span>
+        </p>
+    </div>
 </div>

@@ -19,15 +19,14 @@ body {
 }
 
 button {
-  background-color: transparent;
-  box-sizing: border-box;
+  font-family: "Shantell Sans", cursive;
+  background-color: #dff1c6;
   padding: 5px 10px;
   border: none;
+  border-radius: 20px;
   box-shadow: lightgray 3px 3px 7px;
   margin-right: 20px;
-  outline: none;
   font-size: 14px;
-  font-weight: 500;
   &:active {
     transform: translate(1px, 1px);
     box-shadow: lightgray 0 0 5px;

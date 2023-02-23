@@ -1,18 +1,65 @@
 .face-snap-card {
-  box-sizing: border-box;
-  width: 50%;
-  margin: 20px auto;
-  padding: 10px 30px;
-  box-shadow: lightgray 4px 4px 20px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  a {
+    font-family: "Shantell Sans", cursive;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #dff1c6;
+    color: black;
+    padding: 5px 10px;
+    margin: 20px;
+    width: 70px;
+    height: 20px;
+    font-weight: 600;
+  }
   img {
     width: 100%;
   }
   h2 {
     margin-bottom: 0;
   }
-  p {
-    font-weight: 300;
-    font-size: 16px;
+  &__content {
+    width: 50%;
+    margin: 30px auto;
+    padding: 0 30px 10px 30px;
+    box-sizing: border-box;
+    box-shadow: lightgray 4px 4px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #dff1c6;
+    box-shadow: 5px 16px 24px darkgrey;
+  }
+  &__title {
+    border-bottom: 1px solid black;
+  }
+  &__date-location {
+    font-size: 12px;
+  }
+  &__description {
+    height: 45px;
+  }
+  &__snap {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 35px;
+    width: 486px;
+    span {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 20px;
+      width: 40px;
+      i {
+        color: #aade62;
+        margin-top: 1px;
+      }
+    }
+    button {
+      width: 137px;
+    }
   }
 }
 

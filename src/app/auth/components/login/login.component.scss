@@ -1,6 +1,13 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .form-card {
   box-sizing: border-box;
   width: 50%;
+  height: 210px;
   margin: 20px auto;
   padding: 10px 30px;
   box-shadow: lightgray 4px 4px 20px;

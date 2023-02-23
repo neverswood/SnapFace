@@ -1,2 +1,2 @@
-<app-face-snap *ngFor="let faceSnapElementOfArray of faceSnaps$ | async"
-    [faceSnap]="faceSnapElementOfArray"></app-face-snap>
+<app-face-snap *ngFor="let faceSnapElementOfArray of (faceSnaps$ | async)?.reverse(); let last = last"
+    [faceSnap]="faceSnapElementOfArray" class="app-face-snap"></app-face-snap>
